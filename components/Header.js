@@ -77,7 +77,7 @@ function Header() {
                             />
                         </>
                     ) : (
-                        <button onClick={signIn}>Sign In</button>
+                        <button className='font-semibold' onClick={signIn}>Sign In</button>
                     )}
 
                 </div>
