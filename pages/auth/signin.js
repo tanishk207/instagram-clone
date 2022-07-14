@@ -5,7 +5,7 @@ export default function SignIn({ providers }) {
     return (
         <div>
             <Header />
-            <div className="flex flex-col items-center justify-center min-h-screen py-2 px-14 text-center">
+            <div className="mt-40 grid place-items-center">
                 <img className="w-80" src="https://links.papareact.com/ocw" alt="" />
                 <p className="font-xs italic">
                     This is not a REAL app, it is built for educational purposes only.

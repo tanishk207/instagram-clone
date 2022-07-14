@@ -50,7 +50,7 @@ function Post({ id, username, userImg, img, caption }) {
             username: session.user.username,
             userImage: session.user.image,
             timestamp: serverTimestamp(),
-        })
+        });
     }
 
     return (
@@ -115,7 +115,7 @@ function Post({ id, username, userImg, img, caption }) {
                 <form className='flex items-center p-4'>
                     <EmojiHappyIcon className='h-7 cursor-pointer' />
 
-                    <input type="text" className='border-none flex-1 focus:ring-0 outline-none' placeholder='Add a comment...' onChange={e => setComment(e.target.value)} />
+                    <input type="text" value={comment} className='border-none flex-1 focus:ring-0 outline-none' placeholder='Add a comment...' onChange={e => setComment(e.target.value)} />
 
                     <button type='submit' disabled={!comment.trim()} onClick={sendComment} className='font-semibold text-blue-400'>Post</button>
                 </form>
